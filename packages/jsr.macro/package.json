@@ -1,14 +1,17 @@
 {
   "name": "@pokeyo/jsr.macro",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "prepack": "tsc"
   },
   "dependencies": {
-    "@pokeyo/babel-plugin-jsr": "*",
-    "@pokeyo/jsr-runtime": "*",
+    "@pokeyo/babel-plugin-jsr": "^0.0.5",
+    "@pokeyo/jsr-runtime": "^0.0.5",
     "babel-plugin-macros": "^3.1.0"
   },
   "devDependencies": {

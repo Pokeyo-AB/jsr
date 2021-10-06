@@ -26,7 +26,8 @@ export function makeResource<T>(loader: () => Promise<T>, moduleId: string | num
   return {
     getModuleId: () => moduleId.toString(),
     isLoaded,
+    load,
     get,
-    load
+    getModuleIfRequired: get
   }
 }

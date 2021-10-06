@@ -3,6 +3,8 @@ export type Reference<T> = {
   isLoaded: () => boolean;
   load: () => Promise<T>;
   get: () => T | null;
+  /** @deprecated relay compat. use get instead. */
+  getModuleIfRequired: () => T | null;
 }
 
 export function makeResource<T>(loader: () => Promise<T>): Reference<T> {
