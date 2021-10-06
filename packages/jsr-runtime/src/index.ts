@@ -1,4 +1,5 @@
 export type Reference<T> = {
+  getModuleId: () => string;
   isLoaded: () => boolean;
   load: () => Promise<T>;
   get: () => T | null;
