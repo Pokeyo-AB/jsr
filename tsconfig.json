@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "declaration": true
+  },
+  "exclude": [
+    "**/__tests__/**"
+  ],
+  "include": [
+    "./src/"
+  ]
+}
