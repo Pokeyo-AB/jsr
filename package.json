@@ -4,9 +4,9 @@
     "build": "npm run build --workspaces"
   },
   "workspaces": [
-    "./packages/jsr-runtime",
-    "./packages/babel-plugin-jsr",
-    "./packages/jsr.macro",
+    "packages/jsr-runtime",
+    "packages/babel-plugin-jsr",
+    "packages/jsr.macro",
     "packages/jsr-hooks"
   ]
 }
