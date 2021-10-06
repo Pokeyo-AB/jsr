@@ -1,0 +1,16 @@
+{
+  "name": "@pokeyo/jsr-runtime",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepack": "tsc"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-typescript": "^7.15.0",
+    "babel-jest": "^27.2.4",
+    "jest": "^27.2.4",
+    "typescript": "^4.4.3"
+  }
+}
