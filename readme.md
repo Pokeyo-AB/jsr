@@ -12,24 +12,26 @@ At the moment jsr requires webpack as the runtime. However it should be easy to 
 
 CRA support is made possible because of babel-plugin-macros.
 
-Install the jsr package `npm install @pokeyo/jsr` and then use the macro import in your code.
+Install the jsr package `npm install @pokeyo/jsr.macro` and then use the macro import in your code.
 
 ```ts
-import makeResource from '@pokeyo/jsr/macro';
+import {makeResource} from '@pokeyo/jsr.macro';
 const moduleRef = makeResource(() => import("./myModule").then(m => m.default)));
 ```
 
 ## babel
 
+`npm install @pokeyo/babel-plugin-jsr @pokeyo/jsr-runtime`
+
 `.babelrc`
 
 ```json
 {
-  "plugins": ["@pokeyo/jsr/babel/plugin"]
+  "plugins": ["@pokeyo/jsr"]
 }
 ```
 
 ```ts
-import {makeResource} from '@pokeyo/jsr';
+import {makeResource} from '@pokeyo/jsr-runtime';
 const moduleRef = makeResource(() => import("./myModule").then(m => m.default)));
 ```
